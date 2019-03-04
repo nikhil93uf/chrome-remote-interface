@@ -15,6 +15,11 @@ defmodule ChromeRemoteInterface.Session do
     port: 9222
   ]
 
+  @spec init(any()) :: {:ok, any()}
+  def init(init_arg) do
+    {:ok, init_arg}
+  end
+
   @doc """
   Create a new ChromeRemoteInterface.Server to perform HTTP requests to.
   """
